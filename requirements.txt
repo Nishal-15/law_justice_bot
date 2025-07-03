@@ -1,0 +1,8 @@
+Flask
+flask_cors
+requests
+psycopg2-binary
+deep_translator
+PyMuPDF
+transformers
+torch
