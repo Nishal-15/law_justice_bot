@@ -1,0 +1,34 @@
+name: law_chatbot_app
+description: A law and justice chatbot app.
+version: 1.0.0+1
+
+environment:
+sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+flutter:
+sdk: flutter
+http: ^1.1.0
+speech_to_text: ^6.4.0
+
+dev_dependencies:
+flutter_test:
+sdk: flutter
+flutter_launcher_icons: ^0.13.1
+flutter_native_splash: ^2.3.1
+
+flutter_icons:
+android: true
+ios: true
+image_path: "assets/logo.png"
+
+flutter_native_splash:
+color: "#ffffff"
+image: assets/logo.png
+android: true
+ios: true
+
+flutter:
+uses-material-design: true
+assets:
+- assets/logo.png
