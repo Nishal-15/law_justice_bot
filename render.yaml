@@ -1,0 +1,18 @@
+services:
+  - type: web
+name: law-justice-chatbot
+runtime: python
+pythonVersion: 3.12.10
+buildCommand: pip install -r requirements.txt
+startCommand: gunicorn app:app
+autoDeploy: true
+plan: free
+envVars:
+      - key: DB_HOST
+        value: localhost
+      - key: DB_USER
+        value: postgres
+      - key: DB_PASSWORD
+        value: bot
+      - key: DB_NAME
+        value: law_chatbot
